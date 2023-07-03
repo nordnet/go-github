@@ -18950,8 +18950,16 @@ func (r *RulesetConditions) GetRefName() *RulesetRefConditionParameters {
 	return r.RefName
 }
 
+// GetRepositoryId returns the RepositoryId field.
+func (r *RulesetConditions) GetRepositoryId() *RulesetRepositoryIdsConditionParameters {
+	if r == nil {
+		return nil
+	}
+	return r.RepositoryId
+}
+
 // GetRepositoryName returns the RepositoryName field.
-func (r *RulesetConditions) GetRepositoryName() *RulesetRepositoryConditionParameters {
+func (r *RulesetConditions) GetRepositoryName() *RulesetRepositoryNamesConditionParameters {
 	if r == nil {
 		return nil
 	}
@@ -18975,7 +18983,7 @@ func (r *RulesetLinks) GetSelf() *RulesetLink {
 }
 
 // GetProtected returns the Protected field if it's non-nil, zero value otherwise.
-func (r *RulesetRepositoryConditionParameters) GetProtected() bool {
+func (r *RulesetRepositoryNamesConditionParameters) GetProtected() bool {
 	if r == nil || r.Protected == nil {
 		return false
 	}
