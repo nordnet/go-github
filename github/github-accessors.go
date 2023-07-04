@@ -18950,12 +18950,12 @@ func (r *RulesetConditions) GetRefName() *RulesetRefConditionParameters {
 	return r.RefName
 }
 
-// GetRepositoryId returns the RepositoryId field.
-func (r *RulesetConditions) GetRepositoryId() *RulesetRepositoryIdsConditionParameters {
+// GetRepositoryID returns the RepositoryID field.
+func (r *RulesetConditions) GetRepositoryID() *RulesetRepositoryIDsConditionParameters {
 	if r == nil {
 		return nil
 	}
-	return r.RepositoryId
+	return r.RepositoryID
 }
 
 // GetRepositoryName returns the RepositoryName field.
