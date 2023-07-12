@@ -22043,16 +22043,6 @@ func TestRuleRequiredStatusChecks_GetIntegrationID(tt *testing.T) {
 	r.GetIntegrationID()
 }
 
-func TestRuleset_GetBypassMode(tt *testing.T) {
-	var zeroValue string
-	r := &Ruleset{BypassMode: &zeroValue}
-	r.GetBypassMode()
-	r = &Ruleset{}
-	r.GetBypassMode()
-	r = nil
-	r.GetBypassMode()
-}
-
 func TestRuleset_GetConditions(tt *testing.T) {
 	r := &Ruleset{}
 	r.GetConditions()

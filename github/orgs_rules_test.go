@@ -27,7 +27,6 @@ func TestOrganizationsService_GetAllOrganizationRulesets(t *testing.T) {
 			"source_type": "Organization",
 			"source": "o",
 			"enforcement": "active",
-			"bypass_mode": "none",
 			"node_id": "nid",
 			"_links": {
 			  "self": {
@@ -50,7 +49,6 @@ func TestOrganizationsService_GetAllOrganizationRulesets(t *testing.T) {
 		SourceType:  String("Organization"),
 		Source:      "o",
 		Enforcement: "active",
-		BypassMode:  String("none"),
 		NodeID:      String("nid"),
 		Links: &RulesetLinks{
 			Self: &RulesetLink{HRef: String("https://api.github.com/orgs/o/rulesets/26110")},
@@ -764,7 +762,6 @@ func TestOrganizationsService_GetOrganizationRuleset(t *testing.T) {
 		SourceType:  String("Organization"),
 		Source:      "o",
 		Enforcement: "active",
-		BypassMode:  String("none"),
 		NodeID:      String("nid"),
 		Links: &RulesetLinks{
 			Self: &RulesetLink{HRef: String("https://api.github.com/orgs/o/rulesets/26110")},
@@ -853,7 +850,6 @@ func TestOrganizationsService_UpdateOrganizationRuleset(t *testing.T) {
 		Name:        "test ruleset",
 		Target:      String("branch"),
 		Enforcement: "active",
-		BypassMode:  String("none"),
 		Conditions: &RulesetConditions{
 			RefName: &RulesetRefConditionParameters{
 				Include: []string{"refs/heads/main", "refs/heads/master"},
@@ -881,7 +877,6 @@ func TestOrganizationsService_UpdateOrganizationRuleset(t *testing.T) {
 		SourceType:  String("Organization"),
 		Source:      "o",
 		Enforcement: "active",
-		BypassMode:  String("none"),
 		NodeID:      String("nid"),
 		Links: &RulesetLinks{
 			Self: &RulesetLink{HRef: String("https://api.github.com/orgs/o/rulesets/26110")},

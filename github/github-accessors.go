@@ -18894,14 +18894,6 @@ func (r *RuleRequiredStatusChecks) GetIntegrationID() int64 {
 	return *r.IntegrationID
 }
 
-// GetBypassMode returns the BypassMode field if it's non-nil, zero value otherwise.
-func (r *Ruleset) GetBypassMode() string {
-	if r == nil || r.BypassMode == nil {
-		return ""
-	}
-	return *r.BypassMode
-}
-
 // GetConditions returns the Conditions field.
 func (r *Ruleset) GetConditions() *RulesetConditions {
 	if r == nil {
